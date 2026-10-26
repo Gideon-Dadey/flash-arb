@@ -1,0 +1,15 @@
+node_modules/
+.env
+.env.local
+*.log
+.DS_Store
+
+arb-proof/cache/
+arb-proof/out/
+arb-proof/broadcast/
+arb-proof/lib/
+
+simulation/cache/
+
+deployments/*.json
+!deployments/.gitkeep

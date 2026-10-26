@@ -1,0 +1,22 @@
+{
+  "name": "flash-arb",
+  "version": "1.0.0",
+  "description": "Aave flash-loan arbitrage executor with dry-run keeper",
+  "private": true,
+  "main": "keeper/keeper.js",
+  "scripts": {
+    "test:forge": "cd arb-proof && forge test --match-contract ArbitrageExecutorProof -vvv",
+    "sim:mock": "node simulation/profit_simulation.js --mock",
+    "sim:mainnet": "node simulation/profit_simulation.js --mainnet",
+    "deploy": "node keeper/deploy.js",
+    "keeper": "node keeper/keeper.js",
+    "keeper:once": "node keeper/keeper.js --once"
+  },
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "ethers": "^6.17.0",
+    "solc": "^0.8.21"
+  }
+}
